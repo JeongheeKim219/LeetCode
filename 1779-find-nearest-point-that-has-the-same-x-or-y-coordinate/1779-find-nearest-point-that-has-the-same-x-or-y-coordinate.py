@@ -12,7 +12,6 @@ class Solution:
         
         mini = min(v_ls)
         for k, v in dic.items():
-            print(k, v)
             if v == mini:
                 return k
             
