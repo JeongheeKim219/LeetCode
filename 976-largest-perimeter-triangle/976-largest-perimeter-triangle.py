@@ -3,8 +3,8 @@ class Solution:
         nums.sort(reverse = True)
         res = 0
         for i in range(0, len(nums)-2):
-            tmp = nums[i:i+3]
-            if max(tmp)*2 < sum(tmp):
-                res = sum(tmp)
+            a, b, c = nums[i:i+3]
+            if a < b+c:
+                res = a+b+c
                 break
         return res
