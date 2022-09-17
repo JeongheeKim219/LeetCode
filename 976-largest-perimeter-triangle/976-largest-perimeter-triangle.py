@@ -1,5 +1,3 @@
-from itertools import combinations
-
 class Solution:
     def largestPerimeter(self, nums: List[int]) -> int:
         nums.sort(reverse = True)
